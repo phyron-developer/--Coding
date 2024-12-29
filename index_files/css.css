@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+    color: aliceblue;
+}
+h1,h2{
+    font-family: "Dangrek", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+button,li,a,input{
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.our{
+    width: 90%;
+    margin: 0 auto;
+}
+i{
+    font-size: 25px;
+}
+
+.study-now{
+    border-radius: 10px;
+    background-color: green;
+    width: 15ch;
+    padding: 10px; 
+    text-align: center;
+    position: relative; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+
+
+
+/* -------------------------------About home page-------------------------------- */
+
+.aboutme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.about-left{
+    width: 50%;
+    padding: 10px;
+}
+.about-right{
+    width: 45%;
+}
+.about-right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-course{
+    margin-bottom: 50px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-course .card{
+    width: 32%;
+}
+.card-course .card, .card-course .card img{
+    border-radius: 15px;
+}
+
+.our .card{
+
+}
+
+/* -------------------------------About contact page-------------------------------- */
+
+.contact{
+    width: 80%;
+    margin: 5% auto;
+}
+.contact h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+}
+.contact h2 i{
+    font-size: 50px;
+    color: darkorange !important;
+}
+.i{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ii{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.i i{
+    font-size: 100px;
+}
+.lecture{
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 50px;
+}
+.lecture p{
+    width: 50%;
+    padding: 10px 20px;
+    text-align: center;
+    line-height: 25px;
+    font-family: "Seimreab", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* -------------------------------About web page-------------------------------- */
+
+
+
+.member-box{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.front{
+    width: 180px;
+    height: 180px;
+    padding: 30px;
+    border-radius: 50%;;
+    border: 1px solid rgb(255, 217, 0);
+}
+.front h4{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.front p{
+    margin-top: 20px;
+    text-align: center;
+
+}
+.feedback{
+    border-radius: 20px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+.h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.img{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+.container1{
+    height: 100%;
+    width: 45%;
+}
+.container1 form{
+    line-height: 35px;
+    width: 100%;
+    padding: 20px 20px 0 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.img img{
+    border-radius: 20px;
+    width: 100%;
+}
+.project{
+    width: 80%;
+    margin: 0 auto;
+}
+.project-card{
+    width: 100%;
+}
+.p1{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.p1 .card{
+    overflow: hidden;
+    border-radius: 30px;
+    color: aliceblue;
+    text-align: center;
+}
+.p1 .card img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+}
+.p1 .card img:hover{
+    transform: scale(1.04);
+}
+.gotop{
+    position: fixed;
+    bottom:10%;
+    right: 5%;
+    background-color: darkorange;
+    color: aliceblue;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+ustify-content: center;
+}

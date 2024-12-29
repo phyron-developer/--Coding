@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost/php/project11/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="http://localhost/php/project11/logo.jpeg">
+</head>
+<body>
+    
+
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="./index_files/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index_files/bootstrap-icons.css">
+    <script src="./index_files/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index_files/all.min.css">
+    <script src="./index_files/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./index_files/sweetalert.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bokor&family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bokor&family=Itim&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Protest+Revolution&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 80%;
+        }
+        ul{
+            margin-top: 15px;
+        }
+        .ul li{
+            list-style: none;
+            /* margin-top: 15px; */
+            margin-right: 20px;
+            display: inline-block;
+        }
+        header{
+            width: 100%;
+        }
+        h1,h2{
+            font-family: "Nunito", sans-serif;
+        }
+        p{
+            font-size: 18px;
+            line-height: 33px;
+        }
+        li{
+            box-sizing: border-box;
+            line-height: 33px; 
+            font-size: 17px; 
+        }
+        body{
+            /* background-image: url(./3.png);
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            height: 100vh; */
+            color: #fff;
+            background-color: #222;
+        }
+        ::-webkit-scrollbar {
+            width: 6px; 
+        }
+        ::-webkit-scrollbar-track {
+            background-color: black;
+            color: rgb(114, 114, 114);
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(58, 58, 58); 
+            border-radius: 10px; 
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #555; 
+        }
+        :root{
+            --youtube:#FF0000;
+            --telegram:#0088CC;
+            --facebook:#4267B2;
+            --color:rgb(253, 177, 0);
+        }
+        span{
+            color: var(--color);
+        }
+        button{
+            padding: 8px 20px;
+            border: none;
+            background-color: var(--color);
+        }
+        button,li,a,input{
+            border: none;
+            text-decoration: none;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+
+
+    <div class="container text-white">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="http://localhost/php/project11/#" class="nav-link px-2 text-white"><h5>ភីរុណ-Coding</h5></a></li>
+            </ul>
+            <ul class="ul">
+                <li><a href="http://localhost/php/project11/index.php" class="nav-link px-2 link-white">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a style="color: #fff;" class="nav-link dropdown-toggle" href="http://localhost/php/project11/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-collection-play-fill"></i>&nbsp;Courses
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" type="button" href="http://localhost/php/project11/web.php">Web development</a></li>
+                        <li><a class="dropdown-item" href="http://localhost/php/project11/#">UX-UI</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="http://localhost/php/project11/#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://localhost/php/project11/contact.php" class="nav-link px-2 link-white">Contact Me</a></li>
+            </ul>
+            <div class="dropdown text-end">
+
+                                <a class="d-block text-white link-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">Logout&nbsp;&nbsp;<i class="fa-solid fa-user"></i></a>
+
+                    <ul class="dropdown-menu text-small text-white" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="http://localhost/php/project11/#">New project...</a></li>
+                        <li><a class="dropdown-item" href="http://localhost/php/project11/#">Settings</a></li>
+                        <li><a class="dropdown-item" href="http://localhost/php/project11/#">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="http://localhost/php/project11/logout.php">Logout</a></li>
+                    </ul>
+                
+                
+            </div>
+        </div>
+    </div>
+
+<script src="./index_files/sweetalert.min.js"></script>
+
+                
+                
+                
+                    
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link rel="stylesheet" href="./index_files/css.css">
+                    <link rel="icon" href="http://localhost/php/project11/img/logo.jpeg">
+                    <title>ភីរុណ-Coding</title>
+                
+                
+                    
+                    <div class="container">
+                        <div>
+                            <!-- <a href="content.php">dfdfsd</a> -->
+                            <h1 style="text-align: center; margin:4% auto;">សូមស្វាគមន៍មកកាន់ <span>ភីរុណ-Coding</span></h1>   
+                        </div>
+
+                        <div class="aboutme">
+                            <div class="about-left">
+                                <h2>រៀនជាមួយ​ <span>ភីរុណ-Coding</span></h2>
+                                <p>នៅក្នុង​ Website មួយនេះគឺមានការសិក្សាអំពី Web Development ហើយក៏មាននៅវគ្គសិក្សាមួយចំនួនផងដែរ។ នៅក្នុងវគ្គសិក្សានេះមានដូចជា​ HTML, CSS, Javascript, jQuery, PHP ហើយនឹង​ Laravel។  ក្នុងការសិក្សានេះអ្នកអាចស្វែងរកព័ត៌មានច្រើននៅក្នុងវគ្គសិក្សានេះដែរ។</p>
+                                <p>ចុះឈ្មោះឥឡូវនេះតាមរយៈ :</p>
+                                <a href="http://localhost/php/project11/"><i class="fa-brands fa-telegram"></i>&nbsp;Telegram</a>&nbsp;&nbsp;
+                                <a href="https://www.facebook.com/phyronU"><i class="fa-brands fa-facebook"></i>&nbsp;Facebook</a>
+                            </div>
+                            <div class="about-right">
+                                <img src="./index_files/okoliechykwuka - Overview.gif" alt="">
+                            </div>
+                        </div>
+
+                        <p style="width:350px; text-align:center; margin:0 auto;">ក្នុងពេលឆាប់ៗខ្ញុំនិងដាក់បន្ថែមនៅវគ្គសិក្សាដូចជា Boostrap, Tailwind, Vuejs ហើយនិង Reactjs ផងដែរ។</p><br><br>
+
+                        <h2 style="text-align: center;">វគ្គសិក្សាដោយឥតគិតថ្លៃនៅលើ YouTube Channel</h2><br>
+                        <h4 class="study-now">សិក្សាឥឡូវនេះ <i class="bi bi-book-half"></i></h4><br>
+
+
+                        <div class="card-course">
+                            <div class="card bg-dark text-white">
+                                <div class="bg-image hover-overlay" data-mdb-ripple-init="" data-mdb-ripple-color="light">
+                                    <img src="./index_files/uxui1.gif" class="img-fluid">
+                                    <a href="http://localhost/php/project11/#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                    </a>
+                                </div>
+                                <div class="card-body ">
+                                    <h5 class="card-title">UX&amp;UI</h5>
+                                    <p class="card-text ">ក្នុងការសិក្សាអំពី UX&amp;UI យើងនឹងធ្វើការបង្កើតនូវទម្រង់របស់ Website មុនទៅដល់ការសរសេរ Front End។</p>
+                                    <a href="http://localhost/php/project11/#!" class="btn btn-primary" data-mdb-ripple-init="">Learn</a>
+                                </div>
+                            </div>
+                            <div class="card bg-dark text-white">
+                                <div class="bg-image hover-overlay" data-mdb-ripple-init="" data-mdb-ripple-color="light">
+                                    <img src="./index_files/frontend.gif" class="img-fluid">
+                                    <a href="http://localhost/php/project11/#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Front End Development</h5>
+                                    <p class="card-text">បន្ទាប់ពីបានបង្កើនូវទម្រង់ Website រួចយើងនឹងធ្វើការសរសេរកូដដើម្បីបង្កើតទម្រង់​ Website នោះ។</p>
+                                    <a href="http://localhost/php/project11/#!" class="btn btn-primary" data-mdb-ripple-init="">Learn</a>
+                                </div>
+                                </div>
+                            <div class="card bg-dark text-white">
+                                <div class="bg-image hover-overlay" data-mdb-ripple-init="" data-mdb-ripple-color="light">
+                                    <img src="./index_files/AI.gif" class="img-fluid">
+                                    <a href="http://localhost/php/project11/#!">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Back End Development</h5>
+                                    <p class="card-text">បន្ទាប់ពីបានបង្កើនូវទម្រង់ Website នឹង front end រួចយើងនឹងធ្វើការសរសេរ Back End ដើម្បីបញ្ចប់នូវ Website របស់យើង។</p>
+                                    <a href="http://localhost/php/project11/#!" class="btn btn-primary" data-mdb-ripple-init="">Learn</a>
+                                </div>
+                                </div>
+                        </div>
+
+                        <h2 class="h2">Feedback</h2>
+                        <p class="text-center">You can feedback to me for more develop my website.</p><br><br>
+                        <div class="feedback bg-dark">
+                            <div class="img">
+                                <img src="./index_files/feedback1.gif" alt="">
+                            </div>
+                            <div class="container1">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="username">Username</label>
+                                        <input type="text" class="form-control  bg-dark text-white" id="username" placeholder="Enter username" aria-describedby="usernameFeedback">
+                                        <div id="usernameFeedback" class="invalid-feedback">
+                                            Username is required.
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control bg-dark text-white" id="message" rows="3" placeholder="Enter your message" aria-describedby="messageFeedback"></textarea>
+                                        <div id="messageFeedback" class="invalid-feedback">
+                                            Message cannot be empty.
+                                        </div>
+                                    </div><br>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div><br><br>
+
+                        <div class="our">
+                                <div class="row  text-white">
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                        <div class="card bg-dark text-white">
+                                            <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                            <img src="./index_files/me.png" alt="" style="width: 50px; height: 50px" class="rounded-circle">
+                                            <div class="ms-3 text-white">
+                                                <p class="fw-bold mb-1">Phon Phyron</p>
+                                                <p class="mb-0 text-white">phyronu@gmail.com</p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                        <div class="card bg-dark text-white">
+                                            <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                            <img src="./index_files/6.jpg" alt="" style="width: 45px; height: 45px" class="rounded-circle">
+                                            <div class="ms-3 text-white">
+                                                <p class="fw-bold mb-1">Phon Pisal</p>
+                                                <p class="mb-0 text-white">alex.ray@gmail.com</p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                        <div class="card bg-dark text-white">
+                                            <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                            <img src="./index_files/7.jpg" alt="" style="width: 45px; height: 45px" class="rounded-circle">
+                                            <div class="ms-3 text-white">
+                                                <p class="fw-bold mb-1">Phat Chetra</p>
+                                                <p class="mb-0 text-white">kate.hunington@gmail.com</p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                        <div class="card bg-dark text-white">
+                                            <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                            <img src="./index_files/9.jpg" alt="" style="width: 45px; height: 45px" class="rounded-circle">
+                                            <div class="ms-3 text-white">
+                                                <p class="fw-bold mb-1">Pheak sopeak</p>
+                                                <p class="mb-0 text-white">soraya.letto@gmail.com</p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                        <div class="card bg-dark text-white">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                            <img src="./index_files/11.jpg" alt="" style="width: 45px; height: 45px" class="rounded-circle">
+                                            <div class="ms-3 text-white">
+                                                <p class="fw-bold mb-1">Phouch Phan</p>
+                                                <p class="mb-0 text-white">zeynep.dudley@gmail.com</p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-6 mb-4">
+                                        <div class="card bg-dark text-white">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                            <img src="./index_files/15.jpg" alt="" style="width: 45px; height: 45px" class="rounded-circle">
+                                            <div class="ms-3 text-white">
+                                                <p class="fw-bold mb-1">Born Daro</p>
+                                                <p class="mb-0 text-white">ayat.black@gmail.com</p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div><br>
+
+                        <div class="project">
+                            <h2 class="text-center">PROJECTS ខ្លះៗដែលខ្ញុំបានបង្កើត</h2><br>
+                            <p>នេះខ្ញុំបានយក​ Projects ចំនួន​ 6 មកបង្ហាញដូចខាងក្រោម :</p><br><br>
+                            <div class="project-card">
+                                <div class="p1">
+                                    <div class="card bg-dark" style="width: 18rem;">
+                                        <img src="./index_files/project4.gif" class="card-img-top" alt="Sunset Over the Sea">
+                                        <div class="card-body bg-dark text-white">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-dark" style="width: 18rem;">
+                                        <img src="./index_files/project2.gif" class="card-img-top" alt="Sunset Over the Sea">
+                                        <div class="card-body bg-dark text-white">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-dark" style="width: 18rem;">
+                                        <img src="./index_files/project3.gif" class="card-img-top" alt="Sunset Over the Sea">
+                                        <div class="card-body bg-dark text-white">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p1">
+                                    <div class="card bg-dark" style="width: 18rem;">
+                                        <img src="./index_files/project1.gif" class="card-img-top" alt="Sunset Over the Sea">
+                                        <div class="card-body bg-dark text-white">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-dark" style="width: 18rem;">
+                                        <img src="./index_files/project5.gif" class="card-img-top" alt="Sunset Over the Sea">
+                                        <div class="card-body bg-dark text-white">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-dark" style="width: 18rem;">
+                                        <img src="./index_files/project6.gif" class="card-img-top" alt="Sunset Over the Sea">
+                                        <div class="card-body bg-dark text-white">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="gotop bg-dark">
+                            <a href="http://localhost/php/project11/#top"><i class="bi bi-arrow-up-circle"></i></a>
+                        </div>
+                    </div>
+                
+                
+                
+
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: #fff;    
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .course-footer{
+            margin: 0 auto;
+            width: 85%;
+        }
+        .course-footer{
+            padding: 50px 40px;
+        }
+        .course-footer p{
+            text-align: center;
+        }
+        .course-footer a{
+            color: var(--color);
+        }
+        .cf{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+        .fa-facebook{
+            color: var(--facebook);
+        }
+        .fa-telegram{
+            color: var(--telegram);
+        }
+        .fa-youtube{
+            color: var(--youtube);
+        }
+    </style>
+
+
+    <br><br>
+    <div class="course-footer">
+        <p>​© រក្សា​សិទ្ធិ​គ្រប់​យ៉ាង​ដោយ <span><a href="https://www.youtube.com/@phyron-coding">Phyron-Coding.com</a></span> ឆ្នាំ​២០២៥</p>
+        <p style="color: red;">រាល់ការចែកចាយ​ វីដេអូបង្រៀន ដោយគ្មានការអនុញ្ញាតិ​ ត្រូវទទួលខុសត្រូវចំពោះមុខច្បាប់។</p><br>
+        <p class="cf"><a href="https://www.facebook.com/phyronU"><i class="fa-brands fa-facebook"></i>&nbsp;Facebook.com</a><a href="http://localhost/php/project11/"><i class="fa-brands fa-telegram"></i>&nbsp;Telegram</a><a href="https://www.youtube.com/@phyron-coding"><i class="fa-brands fa-youtube"></i>&nbsp;YouTube Channel</a></p>
+    </div>
+
+             
+    
+
+<script>
+   
+</script>
+
+</div></body></html>
